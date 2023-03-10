@@ -144,7 +144,7 @@ elif choose == "Predictions":
     testdata = st.file_uploader("Upload data for prediction without selling_price column with the other columns mentioned same as in datainfo:")
     if testdata is not None:
         df = pd.read_csv(testdata)
-        st.write("First 5 rows of Uploaded Data:")
+        st.write("Uploaded Data:")
         st.write(df)
     else:
         st.write("No Data Given")
